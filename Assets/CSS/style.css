@@ -12,17 +12,26 @@ i {
 }
 .main-menu ul li {
   display: inline-block;
-  padding: 40px 0 0 30px;
+  padding: 40px 0 0 28px;
+}
+.main-menu ul li a:hover {
+  color: #86371c;
 }
 .logo {
   padding: 20px;
 }
 .menu-icon {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .menu-icon ul li {
   display: inline-block;
-  padding: 20px 27px 15px 0;
+  padding: 20px 24px 15px 0;
+}
+.menu-icon ul li a {
+  color: inherit;
+}
+.menu-icon ul li a:hover {
+  color: #86371c;
 }
 .noti-wrap {
   position: relative;
@@ -53,10 +62,13 @@ i {
   right: 17px;
 }
 .user {
-  padding: 20px;
+  padding-top: 25px;
 }
-.user-icon {
-  color: black;
+.user a {
+  color: inherit;
+}
+.user a:hover {
+  color: #86371c;
 }
 .header-area {
   height: 110px;
@@ -77,42 +89,55 @@ i {
 }
 .banner-small h6 {
   color: #270a05;
+  font-family: Lemonada;
   font-size: 16px;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 575;
   line-height: 26px;
   letter-spacing: 0.16px;
 }
 .banner-head h1 {
-  font-family: "Bakilda Histori";
   color: #270a05;
-  font-size: 100px;
-  font-weight: 500;
-  line-height: 115px;
-  letter-spacing: 1px;
+  font-family: "Bakilda Histori";
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124px;
+  letter-spacing: 1.1px;
 }
 .banner-slogan h3 {
   color: #270a05;
-  font-size: 38px;
-  font-weight: 500;
-  line-height: 56px;
+  font-family: "Bakilda Histori";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
 }
 .banner-para p {
-  opacity: 0.6;
   color: #270a05;
+  font-family: "Value Sans Pro";
   font-size: 16px;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 400;
   line-height: 170%;
-  letter-spacing: 0.15px;
+  letter-spacing: 0.16px;
 }
 .brown-btn {
   color: white;
-  background: #270a05;
+  background: #86371c;
   padding: 18px 30px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid #86371c;
+}
+.brown-btn:hover {
+  background: #fff;
+  color: #86371c;
+  border: 1px solid #86371c;
 }
 .coffe {
   display: inline-flex;
@@ -129,8 +154,25 @@ i {
   transform: translateX(90px);
 }
 .coffe-variant {
-  font-family: "Abril Display";
   display: inline-block;
+}
+.coffe-variant h4 {
+  color: var(--Secondary, #270a05);
+  font-family: "Abril Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.24px;
+}
+.coffe-variant h5 {
+  color: #270a05;
+  font-family: "Value Sans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.14px;
 }
 /* contact-area starts */
 /* section */
@@ -240,18 +282,28 @@ i {
   font-weight: 600;
   background: #fff;
 }
+.about-btn:hover {
+  background: #86371c;
+  color: #fff;
+  font-weight: 600;
+}
 .about-img-pattern {
   width: 500px;
   height: 495px;
   border-radius: 500px 500px 30px 30px;
-  border: 2px solid var(--Secondary, #270a05);
-  opacity: 0.1;
+  border: 2px solid rgb(199, 198, 198);
+  position: relative;
 }
-.about-img {
+.about-img-pattern img {
   position: absolute;
-  top: 297%;
-  right: 11%;
+  right: 3%;
+  bottom: 2%;
 }
+/* .about-img {
+  position: absolute;
+  top: 257%;
+  right: 18%;
+} */
 .svg-last {
   position: absolute;
   top: 1048px;
@@ -314,15 +366,17 @@ i {
   transform: translateY(-50%);
 }
 .menu-btn button {
-  display: inline-flex;
+  background: #fff;
   padding: 18px 30px;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   border-radius: 12px;
   border: 1.5px solid #86371c;
   color: #86371c;
   font-weight: 700;
+}
+.menu-btn button:hover {
+  color: #fff;
+  background: #86371c;
 }
 /* new-recipes */
 .recipes-area {
@@ -342,26 +396,49 @@ i {
   padding-top: 8px;
   color: #270a05;
 }
+.carousel a:hover {
+  transform: scale(1.2);
+}
 /* showcase-area starts */
 .showcase-area {
   margin: 100px 0;
+}
+.showcase-menu {
+  display: flex;
+  justify-content: center;
+}
+.showcase-menu ul li {
+  display: inline-flex;
+  align-self: center;
+  padding: 0 30px;
+}
+.showcase-menu ul li a {
+  padding: 4px 7px;
+  border: 1px solid transparent;
+}
+.showcase-menu ul li a:hover {
+  border-radius: 50px;
+  border: 1px solid #86371c;
+  background: rgba(134, 55, 28, 0.03);
+  color: #86371c;
 }
 /* footer-area starts */
 .footer-area {
   background-image: url(/Assets/Image/fBackground.png);
 }
+.footer-logo {
+  padding-top: 20px;
+}
 .footer-menu ul li {
-  /* display: inline-block; */
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-}
-.footer-menu {
-  display: flex;
   justify-content: center;
 }
 .footer-menu a {
   color: #fff;
   font-weight: 600;
-  padding: 25px;
+  padding: 28px;
+}
+.footer-icon {
+  padding-top: 26px;
 }
