@@ -1,0 +1,367 @@
+a {
+  text-decoration: none;
+  color: #270a05;
+  font-weight: 700;
+  font-size: 17px;
+}
+li {
+  list-style: none;
+}
+i {
+  font-size: 35px;
+}
+.main-menu ul li {
+  display: inline-block;
+  padding: 40px 0 0 30px;
+}
+.logo {
+  padding: 20px;
+}
+.menu-icon {
+  padding-top: 10px;
+}
+.menu-icon ul li {
+  display: inline-block;
+  padding: 20px 27px 15px 0;
+}
+.noti-wrap {
+  position: relative;
+}
+.noti-count {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  top: 15px;
+  right: 18px;
+}
+.cart-wrap {
+  position: relative;
+}
+.cart-count {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  top: 10px;
+  right: 17px;
+}
+.user {
+  padding: 20px;
+}
+.user-icon {
+  color: black;
+}
+.header-area {
+  height: 110px;
+  border-bottom: 1px solid black;
+}
+/* banner-area starts */
+.svg-1 {
+  position: absolute;
+  top: 430px;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+.svg-2 {
+  position: absolute;
+  left: 0;
+  top: 165px;
+}
+.banner-small h6 {
+  color: #270a05;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.16px;
+}
+.banner-head h1 {
+  font-family: "Bakilda Histori";
+  color: #270a05;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 115px;
+  letter-spacing: 1px;
+}
+.banner-slogan h3 {
+  color: #270a05;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 56px;
+}
+.banner-para p {
+  opacity: 0.6;
+  color: #270a05;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 170%;
+  letter-spacing: 0.15px;
+}
+.brown-btn {
+  color: white;
+  background: #270a05;
+  padding: 18px 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+}
+.coffe {
+  display: inline-flex;
+  position: relative;
+  padding-left: 35px;
+  width: 200px;
+}
+.coffe-mug {
+  position: absolute;
+  transform: translateX(45px);
+}
+.coffe-mug2 {
+  position: absolute;
+  transform: translateX(90px);
+}
+.coffe-variant {
+  font-family: "Abril Display";
+  display: inline-block;
+}
+/* contact-area starts */
+/* section */
+.section-title h2 {
+  color: #270a05;
+  font-family: "Bakilda Histori";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 136.364% */
+}
+.section-title h5 {
+  color: #86371c;
+  font-family: Lemonada;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 380;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.16px;
+  width: 646px;
+  margin: auto;
+}
+.section-title p {
+  color: #270a05;
+  font-family: "Value Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  letter-spacing: 0.16px;
+}
+/* section */
+.contact-area {
+  background: #fffaf2;
+  height: 250px;
+}
+.contact-time {
+  border-right: 1px solid rgb(199, 195, 195);
+}
+.contact-location {
+  border-right: 1px solid rgb(199, 195, 195);
+}
+.play-video {
+  border-radius: 0px 0px 12px 12px;
+  color: white;
+  background: #86371c;
+  width: 319px;
+  height: 326px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.play-text {
+  display: inline-block;
+}
+.play-icon {
+  display: inline-block;
+}
+.play-icon a {
+  color: inherit;
+}
+.play-wrap {
+  padding-top: 240px;
+}
+/* about-area starts */
+.about-area {
+  margin-top: 200px;
+}
+.about-card-text {
+  border: 1.5px solid #86371c;
+  border-radius: 10px;
+  width: 203px;
+  height: 134px;
+}
+.about-card-text p {
+  font-weight: 600;
+  color: #86371c;
+}
+.about-card-text h1 {
+  font-weight: 700;
+  color: #270a05;
+}
+.about-card-text-rotate p {
+  font-weight: 600;
+  color: #86371c;
+}
+.about-card-text-rotate h1 {
+  font-weight: 700;
+  color: #270a05;
+}
+.about-card-text-rotate {
+  border: 1.5px solid #86371c;
+  border-radius: 10px;
+  width: 203px;
+  height: 134px;
+  transform: rotate(3.686deg);
+}
+.about-btn {
+  display: inline-flex;
+  padding: 18px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1.5px solid #86371c;
+  color: #86371c;
+  font-weight: 600;
+  background: #fff;
+}
+.about-img-pattern {
+  width: 500px;
+  height: 495px;
+  border-radius: 500px 500px 30px 30px;
+  border: 2px solid var(--Secondary, #270a05);
+  opacity: 0.1;
+}
+.about-img {
+  position: absolute;
+  top: 297%;
+  right: 11%;
+}
+.svg-last {
+  position: absolute;
+  top: 1048px;
+  right: 0;
+}
+/* menu-area starts*/
+.menu-area {
+  margin-top: 150px;
+}
+.menu-wrap {
+  width: 640px;
+  height: 135px;
+  border: 1px solid #86371c;
+  border-radius: 20px;
+  margin: 20px 0;
+  position: relative;
+}
+.menu-img {
+  display: inline-block;
+  border: 2px dashed black;
+  border-radius: 50%;
+  padding: 3px;
+  position: absolute;
+  left: 4%;
+  top: 21%;
+}
+.menu-price h3 {
+  display: inline-block;
+  display: inline-flex;
+  height: 55px;
+  width: 56px;
+  background: #86371c;
+  color: #fff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.menu-price h4 {
+  font-weight: 600;
+  font-size: 28px;
+  display: inline-block;
+  display: inline-flex;
+  height: 55px;
+  width: 56px;
+  background: rgb(171, 170, 170);
+  color: black;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.menu-price {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 2px dashed black;
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+}
+.menu-btn button {
+  display: inline-flex;
+  padding: 18px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1.5px solid #86371c;
+  color: #86371c;
+  font-weight: 700;
+}
+/* new-recipes */
+.recipes-area {
+  background: #fffaf2;
+  margin-top: 100px;
+  padding: 80px 0;
+}
+.btn-carousel {
+  display: inline-block;
+  height: 57px;
+  width: 57px;
+  border: 2px solid #270a05;
+  border-radius: 50%;
+  text-align: center;
+}
+.btn-carousel i {
+  padding-top: 8px;
+  color: #270a05;
+}
+/* showcase-area starts */
+.showcase-area {
+  margin: 100px 0;
+}
+/* footer-area starts */
+.footer-area {
+  background-image: url(/Assets/Image/fBackground.png);
+}
+.footer-menu ul li {
+  /* display: inline-block; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+}
+.footer-menu a {
+  color: #fff;
+  font-weight: 600;
+  padding: 25px;
+}
