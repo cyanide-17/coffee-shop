@@ -1,3 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #fff;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
 a {
   text-decoration: none;
   color: #270a05;
@@ -70,10 +85,10 @@ i {
 .user a:hover {
   color: #86371c;
 }
-.header-area {
+/* .header-area {
   height: 110px;
   border-bottom: 1px solid black;
-}
+} */
 /* banner-area starts */
 .svg-1 {
   position: absolute;
@@ -86,6 +101,7 @@ i {
   position: absolute;
   left: 0;
   top: 165px;
+  z-index: -1;
 }
 .banner-small h6 {
   color: #270a05;
@@ -135,7 +151,7 @@ i {
   border: 1px solid #86371c;
 }
 .brown-btn:hover {
-  background: #fff;
+  background: transparent;
   color: #86371c;
   border: 1px solid #86371c;
 }
@@ -234,8 +250,16 @@ i {
 .play-icon a {
   color: inherit;
 }
+.play-icon a:hover {
+  color: #270a05;
+}
 .play-wrap {
   padding-top: 240px;
+  position: relative;
+}
+.play-arrow-img {
+  position: absolute;
+  top: 60px;
 }
 /* about-area starts */
 .about-area {
@@ -299,15 +323,11 @@ i {
   right: 3%;
   bottom: 2%;
 }
-/* .about-img {
-  position: absolute;
-  top: 257%;
-  right: 18%;
-} */
 .svg-last {
   position: absolute;
   top: 1048px;
   right: 0;
+  z-index: -1;
 }
 /* menu-area starts*/
 .menu-area {
@@ -344,7 +364,6 @@ i {
 .menu-price h4 {
   font-weight: 600;
   font-size: 28px;
-  display: inline-block;
   display: inline-flex;
   height: 55px;
   width: 56px;
@@ -396,7 +415,7 @@ i {
   padding-top: 8px;
   color: #270a05;
 }
-.carousel a:hover {
+.carousel-arrow a:hover {
   transform: scale(1.2);
 }
 /* showcase-area starts */
@@ -406,10 +425,10 @@ i {
 .showcase-menu {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .showcase-menu ul li {
   display: inline-flex;
-  align-self: center;
   padding: 0 30px;
 }
 .showcase-menu ul li a {
@@ -441,4 +460,147 @@ i {
 }
 .footer-icon {
   padding-top: 26px;
+}
+.btn-hidden {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  body {
+  }
+  /* navba-area starts */
+  .logo {
+    padding-left: 100px;
+  }
+  .menu-icon {
+    padding-left: 110px;
+  }
+  .user {
+    padding-left: 162px;
+  }
+  /* banner-area starts */
+  .banner-head h1 {
+    display: none;
+  }
+  .main-menu nav ul {
+    order: 1;
+  }
+  .main-menu nav ul li {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #fff;
+  }
+  .main-menu nav ul li:hover {
+    background: #fff;
+    color: #86371c;
+    border: 2px solid #86371c;
+    border-radius: 13px;
+  }
+  .banner-img img {
+    max-width: 110%;
+  }
+  /* contact-area starts */
+  .play-video {
+    text-align: center;
+  }
+  .contact-time {
+    max-width: 100%;
+    text-align: center;
+    border-right: none;
+  }
+  .btn-hidden {
+    display: inline-flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1.5px solid #86371c;
+    color: #86371c;
+    font-weight: 600;
+    background: #fff;
+    width: auto;
+    margin-left: 125px;
+  }
+  .btn-hidden:hover {
+    background: #86371c;
+    color: #fff;
+    font-weight: 600;
+  }
+  .contact-location {
+    /* max-width: 100%;
+    align-items: center; */
+    display: none;
+  }
+  .booking-contact {
+    /* max-width: 100%;
+    text-align: center; */
+    display: none;
+  }
+  /* about-area starts */
+  .about-card-text {
+    max-width: 100%;
+    height: 80%;
+  }
+  .about-card-text-rotate {
+    max-width: 100%;
+    height: 100%;
+  }
+  .about-img-pattern {
+    margin-top: 100px;
+  }
+  .about-img-pattern img {
+    max-width: 100%;
+  }
+  .svg-1 {
+    position: absolute;
+    top: 1400px;
+    right: 0;
+    z-index: 1;
+    opacity: 0.1;
+  }
+  .svg-last {
+    position: absolute;
+    top: 2920px;
+    right: 0;
+    z-index: -1;
+    padding: 2px;
+  }
+  /* menu-area starts */
+  .menu-wrap {
+    max-width: 100%;
+  }
+  /* recipes-area starts */
+  .carousel-arrow {
+    margin-left: 35%;
+    margin-bottom: 30px;
+  }
+  /* showcase-area starts */
+  .showcase-menu {
+    margin-bottom: 30px;
+  }
+  .showcase-menu ul li {
+    width: 23%;
+  }
+  .showcase-img img {
+    max-width: 100%;
+    /* padding: 10px; */
+  }
+  /* footer-area starts */
+  .footer-menu {
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+  .footer-menu ul li {
+    padding: 5px;
+  }
+  .footer-menu ul li a:hover {
+    display: inline-block;
+    background: #fff;
+    color: #270a05;
+    border-radius: 40%;
+  }
+  .footer-menu a {
+    padding: 2px 7px 2px 7px;
+  }
 }
