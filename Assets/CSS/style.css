@@ -85,10 +85,9 @@ i {
 .user a:hover {
   color: #86371c;
 }
-/* .header-area {
-  height: 110px;
+.header-area {
   border-bottom: 1px solid black;
-} */
+}
 /* banner-area starts */
 .svg-1 {
   position: absolute;
@@ -208,7 +207,6 @@ i {
   font-weight: 380;
   line-height: 100%; /* 16px */
   letter-spacing: 0.16px;
-  width: 646px;
   margin: auto;
 }
 .section-title p {
@@ -334,11 +332,12 @@ i {
   margin-top: 150px;
 }
 .menu-wrap {
-  width: 640px;
-  height: 135px;
+  /* width: 640px;
+  height: 135px; */
   border: 1px solid #86371c;
   border-radius: 20px;
   margin: 20px 0;
+  padding: 10px 0;
   position: relative;
 }
 .menu-img {
@@ -444,6 +443,7 @@ i {
 /* footer-area starts */
 .footer-area {
   background-image: url(/Assets/Image/fBackground.png);
+  max-width: 100%;
 }
 .footer-logo {
   padding-top: 20px;
@@ -464,22 +464,82 @@ i {
 .btn-hidden {
   display: none;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
+  i {
+    font-size: 14px;
+  }
+  .main-menu {
+    display: none;
+  }
+  .section-title h2 {
+    color: #270a05;
+    font-family: "Bakilda Histori";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+  }
   body {
   }
   /* navba-area starts */
+  .noti-count {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    top: 8%;
+    right: 52%;
+  }
+  .cart-count {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    top: 11%;
+    right: 45%;
+  }
+  .user span {
+    font-size: 7px;
+  }
   .logo {
-    padding-left: 100px;
+    padding: 0px;
   }
   .menu-icon {
-    padding-left: 110px;
+    padding: 0;
+  }
+  .menu-icon ul li {
+    display: inline-block;
+    padding: 0 20px 0 0;
+  }
+  .menu-icon ul li a {
+    padding: 0 1px 0 1px;
   }
   .user {
-    padding-left: 162px;
+    padding: 0;
   }
   /* banner-area starts */
+  .banner-slogan h3 {
+    color: #270a05;
+    font-family: "Bakilda Histori";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+  }
   .banner-head h1 {
-    display: none;
+    color: #270a05;
+    font-family: "Bakilda Histori";
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.1px;
   }
   .main-menu nav ul {
     order: 1;
@@ -497,9 +557,16 @@ i {
     border-radius: 13px;
   }
   .banner-img img {
-    max-width: 110%;
+    max-width: 100%;
+  }
+  .coffe-variant {
+    display: inline-block;
+    margin-left: 50px;
   }
   /* contact-area starts */
+  .contact-area {
+    padding-bottom: 500px;
+  }
   .play-video {
     text-align: center;
   }
@@ -508,34 +575,12 @@ i {
     text-align: center;
     border-right: none;
   }
-  .btn-hidden {
-    display: inline-flex;
-    padding: 12px 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 12px;
-    border: 1.5px solid #86371c;
-    color: #86371c;
-    font-weight: 600;
-    background: #fff;
-    width: auto;
-    margin-left: 125px;
-  }
   .btn-hidden:hover {
     background: #86371c;
     color: #fff;
     font-weight: 600;
   }
-  .contact-location {
-    /* max-width: 100%;
-    align-items: center; */
-    display: none;
-  }
   .booking-contact {
-    /* max-width: 100%;
-    text-align: center; */
-    display: none;
   }
   /* about-area starts */
   .about-card-text {
@@ -547,10 +592,18 @@ i {
     height: 100%;
   }
   .about-img-pattern {
-    margin-top: 100px;
+    width: 476px;
+    max-width: 100%;
+    height: 194px;
+    border-radius: 500px 500px 30px 30px;
+    border: 2px solid rgb(199, 198, 198);
+    position: relative;
   }
   .about-img-pattern img {
-    max-width: 100%;
+    max-width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
   }
   .svg-1 {
     position: absolute;
@@ -570,25 +623,34 @@ i {
   .menu-wrap {
     max-width: 100%;
   }
+  .menu-img img {
+    max-width: 90%;
+    opacity: 0.9;
+  }
   /* recipes-area starts */
   .carousel-arrow {
-    margin-left: 35%;
+    margin-left: 30%;
     margin-bottom: 30px;
+  }
+  .btn-carousel i {
+    padding: 14px;
+    font-size: 27px;
+    color: #270a05;
   }
   /* showcase-area starts */
   .showcase-menu {
     margin-bottom: 30px;
   }
   .showcase-menu ul li {
-    width: 23%;
+    padding: 0px;
   }
   .showcase-img img {
-    max-width: 100%;
+    max-width: 90%;
     /* padding: 10px; */
   }
   /* footer-area starts */
   .footer-menu {
-    padding-left: 50px;
+    padding-left: 7px;
     padding-top: 20px;
   }
   .footer-menu ul li {
@@ -602,5 +664,100 @@ i {
   }
   .footer-menu a {
     padding: 2px 7px 2px 7px;
+  }
+  .footer-area {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-menu ul li {
+    display: inline-block;
+    padding: 29px 0px 0 6px;
+  }
+  .about-img-pattern {
+    width: 500px;
+    height: 495px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 500px 500px 30px 30px;
+    border: 2px solid rgb(199, 198, 198);
+    position: relative;
+  }
+  .about-card-text {
+    border: 1.5px solid #86371c;
+    border-radius: 10px;
+    width: 203px;
+    max-width: 100%;
+    height: 104px;
+    max-height: 100%;
+  }
+  .about-card-text-rotate {
+    border: 1.5px solid #86371c;
+    border-radius: 10px;
+    width: 203px;
+    max-width: 100%;
+    height: 104px;
+    max-height: 100%;
+    transform: rotate(3.686deg);
+  }
+  .showcase-menu ul li {
+    display: inline-flex;
+    padding: 0px 24px;
+  }
+  .footer-menu a {
+    color: #fff;
+    font-weight: 600;
+    padding: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    padding: 3px;
+  }
+  .main-menu ul li {
+    display: inline-block;
+    padding: 10px 16px 0 16px;
+  }
+  .menu-icon ul li {
+    display: inline-block;
+    padding: 20px 12px 15px 0;
+  }
+  .showcase-menu ul li {
+    display: inline-flex;
+    padding: 0px 9px;
+  }
+  .footer-menu a {
+    color: #fff;
+    font-weight: 600;
+    /* padding: 7px; */
+    padding: 32px 3px 0 2px;
+  }
+  .about-img-pattern {
+    width: 476px;
+    max-width: 100%;
+    height: 352px;
+    border-radius: 500px 500px 30px 30px;
+    border: 2px solid rgb(199, 198, 198);
+    position: relative;
+  }
+  .about-img-pattern img {
+    position: absolute;
+    right: 0%;
+    bottom: 2%;
+  }
+  .about-card-text {
+    border: 1.5px solid #86371c;
+    border-radius: 10px;
+    width: 203px;
+    max-width: 100%;
+    height: 106px;
+  }
+  .about-card-text-rotate {
+    border: 1.5px solid #86371c;
+    border-radius: 10px;
+    width: 203px;
+    max-width: 100%;
+    height: 106px;
+    transform: rotate(3.686deg);
   }
 }
